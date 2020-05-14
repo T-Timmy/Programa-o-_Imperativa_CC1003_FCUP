@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main (void) {
+
+  int m ;
+  int vinte , dez, cinco, um;
+
+  printf("Qual o montante : "); scanf("%d", &m);
+
+  vinte = m / 20;
+  m = (m%20);
+  dez = m / 10;
+  m = (m%10);
+  cinco = m / 5;
+  m = (m%5);
+  um = m / 1;
+
+  printf("Notas de Vinte EUR: %d\n Notas de dez EUR: %d\n Notas de cinco EUR: %d\n Moedas de 1 EUR: %d\n", vinte, dez, cinco, um );
+  return 0;
+}
