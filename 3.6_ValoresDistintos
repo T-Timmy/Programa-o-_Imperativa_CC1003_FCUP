@@ -1,0 +1,20 @@
+# include <stdio.h>
+
+int main (void) {
+
+  int a, b, c;
+
+  printf("Introduza o primeiro valor"); scanf("%d", &a );
+  printf("Introduza o segundo valor"); scanf("%d", &b );
+  printf("Introduza o terceiro valor"); scanf("%d", &c );
+
+  if ( a == b && a== c ) {
+    printf("Os três valores são iguais");
+  } else if (a == b || a== c || b == c) {
+    printf("Tem dois valores distintos");
+  } else {
+    printf("todos os valores são diferentes");
+  }
+
+  return 0;
+}
