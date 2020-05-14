@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main (void) {
+
+  int a, b, c, max , min, amp ;
+
+  printf("Qual o primeiro valor: "); scanf("%d", &a );
+  printf("Qual o segundo valor: "); scanf("%d", &b );
+  printf("Qual o terceiro valor: "); scanf("%d", &c );
+
+  if ( a >= b && a >= c) {
+    max = a;
+  } else if (b >= a && b >= c) {
+    max = b ;
+  } else {
+    max = c;
+  }
+
+  if ( a <= b && a <= c) {
+    min = a;
+  } else if (b <= a && b <= c) {
+    min = b ;
+  } else {
+    min = c;
+  }
+
+  amp = max - min ;
+
+  printf("O máximo é %d , o mínimo é %d e a amplitude é %d \n", max , min , amp );
+
+  return 0;
+}
