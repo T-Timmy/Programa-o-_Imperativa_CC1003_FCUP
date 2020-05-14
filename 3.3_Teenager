@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+
+int age, teenager;
+
+printf("Qual a idade? "); scanf("%d", &age);
+
+if(age >= 13 && age <=19) {
+  teenager = 1;
+} else {
+  teenager = 0;
+}
+
+printf("É um adolescente se valor igual a 1 - Valor: %d\n", teenager);
+
+return 0;
+}
