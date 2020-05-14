@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main (void) {
+
+int num1, den1, num2, den2, num, den;
+
+printf("Intruduza o Primeiro numerador:"); scanf("%d", &num1 );
+printf("Intruduza o Primeiro denominador:"); scanf("%d", &den1 );
+printf("Intruduza o Segundo numerador:"); scanf("%d", &num2 );
+printf("Intruduza o Segundo denominador:"); scanf("%d", &den2 );
+
+num = (num1*den2)+(num2*den1);
+den= (den1*den2);
+
+//printf("O numerador é: %d\n", num );
+//printf("O denominador é: %d\n", den );
+
+printf("Resultado: %d/%d\n", num, den );
+
+  return 0;
+}
