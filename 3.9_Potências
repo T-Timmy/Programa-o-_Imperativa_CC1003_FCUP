@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int potencia (int b, int n ) {
+
+  if (n == 0) {
+
+    return 1;
+
+  } else if (n == 1) {
+
+    return b;
+
+  } else {
+
+    int result = b;
+
+    for ( int i = 1; i < n ; i++) {
+
+      result *= b;
+
+    }
+
+    return result;
+  }
+}
+
+int main (void) {
+
+  int a, e;
+
+  printf("Qual a base: "); scanf("%d", &a );
+  printf("Qual a potência: "); scanf("%d", &e );
+
+  printf("Resultado: %d\n", potencia(a,e));
+
+  return 0;
+}
