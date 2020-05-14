@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+const float PI = 3.14159; // #define PI 3.14159
+
+int main (void) {
+
+  float r, volume;
+
+  printf("Qual o valor do raio da esfera:"); scanf("%f", &r);
+
+  printf("O volume é %f cm³\n", volume= (4.0/3.0)*PI*r*r*r);
+
+
+  return 0;
+}
