@@ -1,0 +1,28 @@
+# include <stdio.h>
+
+int mediana ( int x, int y, int z) {
+
+  int med ;
+
+  if (( x>=y && x<=z) || (x>=z && x<=y)) {
+    med = x;
+  } else if (( y>=x && y<=z) || (y>=z && y<=x)){
+    med = y;
+  } else {
+    med = z ;
+  }
+}
+
+int main(void) {
+
+  int a, b, c;
+
+  printf("Primeiro valor: "); scanf("%d", &a);
+  printf("Segundo valor: "); scanf("%d", &b);
+  printf("Terceiro valor: "); scanf("%d", &c);
+
+  printf("A mediana é %d ", mediana (a, b, c));
+
+
+  return 0;
+}
