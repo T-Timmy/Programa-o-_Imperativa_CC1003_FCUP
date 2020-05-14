@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main (void) {
+
+  int a, b, c, max, min , med ;
+
+  printf("Qual o primeiro número: "); scanf("%d", &a);
+  printf("Qual o segundo número: "); scanf("%d", &b);
+  printf("Qual o segundo número: "); scanf("%d", &c);
+
+  if ( a >= b && a >= c ) {
+    max = a;
+  } else if ( b >= a && b >= c ) {
+    max = b;
+  } else {
+    max = c;
+  }
+
+  printf("%d valor max\n", max);
+
+  if ( a <= b && a <= c ) {
+    min = a;
+  } else if ( b <= a && b <= c ) {
+    min = b;
+  } else {
+    min = c;
+  }
+
+  printf("%d valor min\n", min);
+
+  med = (( a + b + c) - max - min ) ;
+
+  printf("A mediana é %d \n ", med);
+
+  return 0;
+}
