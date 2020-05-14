@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main (void) {
+
+  float valor, iva;
+
+  printf("Qual o valor :"); scanf("%f", &valor);
+
+  printf("O valor já com IVA, sobre o montante de %.3f EUR é de %.3f EUR\n", valor , iva=(valor*0.23)+valor);
+
+  return 0;
+}
