@@ -1,0 +1,21 @@
+# include <stdio.h>
+
+int main (void) {
+
+int n;
+int maior = 0;
+
+do {
+
+  printf("Qual o valor: "); scanf("%d", &n);
+
+  if (n >= maior) {
+    maior = n;
+  }
+
+} while (n != 0);
+
+printf("O maior valor introduzido foi: %d \n", maior);
+
+return 0;
+}
