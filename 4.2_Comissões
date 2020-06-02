@@ -1,0 +1,28 @@
+# include <stdio.h>
+
+int main (void) {
+
+  int mont;
+  float comi;
+
+  do {
+    printf("Qual o valor da montante? "); scanf("%d", &mont);
+
+    if (mont < 2500) {
+      printf("A comissão é: %f\n", comi = ((mont*0.017)+mont) );
+    } else if(mont >= 2500 && mont < 6250) {
+      printf("A comissão é: %f\n", comi = ((mont*0.0066)+mont) );
+    } else if(mont >= 6250 && mont < 20e3) {
+      printf("A comissão é: %f\n", comi = ((mont*0.0034)+mont) );
+    } else if(mont >= 20e3 && mont < 50e3) {
+      printf("A comissão é: %f\n", comi = ((mont*0.0022)+mont) );
+    } else if(mont >= 50e3 && mont < 50e4) {
+      printf("A comissão é: %f\n", comi = ((mont*0.0011)+mont) );
+    } else {
+      printf("A comissão é: %f\n", comi = ((mont*0.0009)+mont) );
+    }
+
+  } while (mont != 0);
+
+  return 0;
+}
