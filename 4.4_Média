@@ -1,0 +1,20 @@
+# include <stdio.h>
+
+int main (void) {
+
+  float n, soma = 0;
+  float media;
+  int i=0;
+
+printf("Qual o número: "); scanf("%f", &n);
+
+while (n != 0){
+
+    soma += n;
+    i++;
+    printf("Qual o número(2): "); scanf("%f", &n);
+}
+
+
+  printf("A média é: %f\n", (media=soma/i) );
+}
