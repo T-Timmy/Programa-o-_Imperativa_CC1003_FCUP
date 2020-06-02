@@ -1,0 +1,24 @@
+# include <stdio.h>
+
+int soma_divisores (int a) {
+
+int soma = 0;
+
+  for (int i=1; i<a; i++) {
+
+    if (a%i == 0) {
+      soma += i;
+printf(" i = %d\n", i );
+    }
+  }
+return soma;
+}
+
+int main (void) {
+
+  int n;
+
+  printf("Qual o número a dividir: "); scanf("%d", &n);
+
+  printf("A soma dos divisores é: %d\n", soma_divisores(n));
+}
