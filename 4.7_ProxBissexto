@@ -1,0 +1,26 @@
+# include <stdio.h>
+
+int bissexto(int n) {
+  if((n%4==0 && !(n%100==0)) || n%400==0){
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+int proxbissexto (int n) {
+
+  while(bissexto(n) == 0){
+      n++;
+  }
+  return n;
+}
+
+int main (void) {
+
+  int ano;
+
+  printf("Qual o ano: "); scanf("%d", &ano );
+
+  printf("O ano %d é o ano bissexto mais próximo do ano %d\n", proxbissexto(ano), ano );
+}
