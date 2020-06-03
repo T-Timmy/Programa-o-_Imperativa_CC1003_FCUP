@@ -1,0 +1,20 @@
+# include <stdio.h>
+
+int main(void) {
+
+int n;
+
+printf("Qual o número décimal a converter? "); scanf("%d", &n);
+
+while (n != 0) {
+
+  int resto;
+
+  resto = n%2;
+  n=n/2;
+  
+  printf("%d\n", resto);
+}
+
+  return 0;
+}
