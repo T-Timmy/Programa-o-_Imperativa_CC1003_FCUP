@@ -1,0 +1,37 @@
+# include <stdio.h>
+
+int euclides (int a, int b){
+  int conta = 0;
+
+  printf("mdc(%d, %d)\n", a, b);
+  conta++;
+  
+  while(a != b){
+
+    if(a > b) {
+      a = a - b;
+      printf("mdc(%d, %d)\n", a, b);
+      conta++;
+    } else {
+      b = b - a;
+      printf("mdc(%d, %d)\n", a, b);
+      conta++;
+    }
+  }
+  printf("(%d),\n", a);
+  printf("Iterações: %d\n",conta);
+  return 0;
+}
+
+int main (void) {
+
+  int eu1, eu2;
+
+  printf("Qual o primeiro valor? "); scanf("%d", &eu1);
+  printf("Qual o segundo valor? "); scanf("%d", &eu2);
+
+  euclides(eu1, eu2);
+
+
+  return 0;
+}
