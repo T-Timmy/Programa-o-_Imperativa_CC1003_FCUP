@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int aleatorio (int a, int b) {
+  for(int i=0; i<100; i++){
+    printf("Aleatório %d: %d\n", i, rand() % b + (a) );
+  }
+
+  return 0;
+}
+
+int main (void) {
+
+  int inf, sup;
+  printf("Qual o limite inferior: "); scanf("%d", &inf);
+  printf("Qual o limite superior: "); scanf("%d", &sup);
+
+  aleatorio (inf, sup);
+
+  return 0;
+}
